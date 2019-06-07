@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task3</title>
+</head>
+<body>
+<script>
+    let a= parseInt(prompt('Введите число а'));
+    let b= parseInt(prompt('ВВедите число б'));
+    if (a>0 && b>0){
+        alert('Если числа положительные то их разность равна:'+(a-b));
+    }
+    else if (a<0&&b<0){
+        alert ('Если числа отрицательные то их сложение дало результат:'+ (a+b));
+    }
+    else if (a<0&&b>0 || a>0 && b<0){
+        alert("ЕСли у числа разных знаков то их сложение дало результуат: "+(a+b));
+    }
+</script>
+</body>
+</html>
