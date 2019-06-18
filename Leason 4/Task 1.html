@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+function getDigitsOfNumber(num) {
+if (!Number.isInteger(num) || num < 0 || num > 999) {
+console.log('Значение аргумента должно быть целым числом в диапазоне [0 .. 999].');
+return {};
+}
+return {
+thirdDigit: num % 10,
+firstDigit: Math.floor(num / 100),
+secondDigit: Math.floor(num / 10) % 10,
+};
+}
+console.log(getDigitsOfNumber(123));
+</script>
+</body>
+</html>
